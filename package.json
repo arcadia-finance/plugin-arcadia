@@ -1,0 +1,34 @@
+{
+  "name": "@arcadia-finance/plugin-elizaos",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "Arcadia Finance: manage concentrated liquidity on Uniswap and Aerodrome with automated rebalancing and yield optimization on Base.",
+  "files": ["dist"],
+  "agentConfig": {
+    "pluginType": "elizaos:plugin:1.0.0",
+    "pluginParameters": {}
+  },
+  "dependencies": {
+    "@elizaos/plugin-evm": "next",
+    "axios": "^1.7.0",
+    "viem": "^2.21.0"
+  },
+  "peerDependencies": {
+    "@elizaos/core": "next"
+  },
+  "devDependencies": {
+    "@elizaos/core": "next",
+    "tsup": "^8.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  }
+}
