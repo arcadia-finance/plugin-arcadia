@@ -6,6 +6,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "Arcadia Finance: manage concentrated liquidity on Uniswap and Aerodrome with automated rebalancing and yield optimization on Base.",
+  "license": "MIT",
   "files": ["dist"],
   "agentConfig": {
     "pluginType": "elizaos:plugin:1.0.0",
