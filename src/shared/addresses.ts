@@ -1,18 +1,27 @@
 export type DexProtocol =
   | "slipstream"
   | "slipstream_v2"
+  | "slipstream_v3"
   | "staked_slipstream"
   | "staked_slipstream_v2"
+  | "staked_slipstream_v3"
   | "uniV3"
   | "uniV4";
 
-type AmProtocol = "slipstreamV1" | "slipstreamV2" | "uniV3" | "uniV4";
+type AmProtocol =
+  | "slipstreamV1"
+  | "slipstreamV2"
+  | "slipstreamV3"
+  | "uniV3"
+  | "uniV4";
 
 const PROTOCOL_TO_AM_KEY: Record<DexProtocol, AmProtocol> = {
   slipstream: "slipstreamV1",
   slipstream_v2: "slipstreamV2",
+  slipstream_v3: "slipstreamV3",
   staked_slipstream: "slipstreamV1",
   staked_slipstream_v2: "slipstreamV2",
+  staked_slipstream_v3: "slipstreamV3",
   uniV3: "uniV3",
   uniV4: "uniV4",
 };
@@ -21,18 +30,21 @@ const AM_ADDRESSES = {
   rebalancers: {
     slipstreamV1: "0x5802454749cc0c4A6F28D5001B4cD84432e2b79F",
     slipstreamV2: "0x953Ff365d0b562ceC658dc46B394E9282338d9Ea",
+    slipstreamV3: "0x37c6258aEe125d520B6f03fc2cb490955050D557",
     uniV3: "0xbA1D0c99c261F94b9C8b52465890Cca27dd993Bd",
     uniV4: "0x01EDaF0067a10D18c88D2876c0A85Ee0096a5Ac0",
   },
   compounders: {
     slipstreamV1: "0x467837f44A71e3eAB90AEcfC995c84DC6B3cfCF7",
     slipstreamV2: "0x35e59448C7145482E56212510cC689612AB4F61f",
+    slipstreamV3: "0xd42A3Ac56456bD5422835B36C35Cacb6448ddCd9",
     uniV3: "0x02e1fa043214E51eDf1F0478c6D0d3D5658a2DC3",
     uniV4: "0xAA95c9c402b195D8690eCaea2341a76e3266B189",
   },
   yieldClaimers: {
     slipstreamV1: "0x5a8278D37b7a787574b6Aa7E18d8C02D994f18Ba",
     slipstreamV2: "0xc8bF4B2c740FF665864E9494832520f18822871C",
+    slipstreamV3: "0x8c1Fbf38118fD5A704b6E7babcB7AF1a9A291980",
     uniV3: "0x75Ed28EA8601Ce9F5FbcAB1c2428f04A57aFaA16",
     uniV4: "0xD8aa21AB7f9B8601CB7d7A776D3AFA1602d5D8D4",
   },

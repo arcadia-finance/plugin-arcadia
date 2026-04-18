@@ -2,7 +2,7 @@ const TOKEN_LIST = `Available tokens: USDC (0x833589fCD6eDb6E08f4c7C32D4f71b54bd
 
 const POOL_LIST = `Available lending pools: wETH (0x803ea69c7e87D1d6C86adeB40CB636cC0E6B98E2), USDC (0x3ec4a293Fb906DD2Cd440c20dECB250DeF141dF1), cbBTC (0xa37E9b4369dc20940009030BfbC2088F09645e3B)`;
 
-const DEX_PROTOCOLS = `DEX protocols: slipstream, slipstream_v2, staked_slipstream, staked_slipstream_v2, uniV3, uniV4`;
+const DEX_PROTOCOLS = `DEX protocols: slipstream, slipstream_v2, slipstream_v3, staked_slipstream, staked_slipstream_v2, staked_slipstream_v3, uniV3, uniV4`;
 
 export const depositTemplate = `Extract the deposit parameters from the user's message.
 
